@@ -1,0 +1,121 @@
+nav{
+    border-bottom: 1px solid rgba(148, 147, 147, 0.178);
+    background-color: rgba(255, 255, 255, 0.74);
+}
+.navbar-hover:hover #nav-element{
+    color: #44B564;
+    border-bottom: 5px solid #44B564;
+    padding-bottom: 0;
+    transition: color .4s linear,border-color .2s linear;
+}
+.banner-section{
+    background-image: url(https://covid-home-care.netlify.app/img/left-corona-bg.svg);
+    background-repeat: no-repeat;
+    background-position:0rem 7.5rem ;
+}
+.banner-heading{
+    font-size: 62px;
+    font-weight: 500;
+}
+#banner-button{
+    border-radius: 30px;
+    background-color: #44B564;
+    border: 0;
+    padding-bottom: 5px;
+}
+.update-container{
+    border-radius:13px;
+
+}
+#update-heading{
+    font-size: 42px;
+    font-weight:500;
+}
+.update-color{
+    color: #44B564;
+}
+.services-section{
+    background-image: url(https://covid-home-care.netlify.app/img/right-corona-bg.png);
+    background-repeat: no-repeat;
+    background-position:0rem 7.5rem ;
+    background-position: right;
+}
+#line-height{
+    line-height: 9px;
+    font-size: 17px;
+}
+#horizontal-row{
+    width: 10%;
+    border: 1px solid rgb(38, 219, 38);
+    font-weight: 900;
+}
+#card-rounded{
+    border-radius: 20px;
+}
+#card-heading{
+    font-size: 28px;
+}
+#card-info{
+    font-size: 17px;
+    letter-spacing: .7px;
+}
+#card-footer-border{
+    background: white;
+    border-radius: 20px;
+}
+.symptoms-section{
+    background-image: url(https://covid-home-care.netlify.app/img/Symptoms-Corona.png);
+    background-repeat: no-repeat;
+}
+#contact-container{
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+#contact-number{
+    font-size: 17px;
+}
+#exampleFormControlInput1, #exampleFormControlTextarea1{
+    padding: 20px 0;
+    padding-left: 20px;
+    background-color: rgb(236, 236, 236);
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+}
+#contact-us{
+    background: linear-gradient(345.88deg, #64CF83 47.7%, #FFFFFF 47.71%);
+}
+#send-button{
+    border-radius: 30px;
+    background-color: #44B564;
+    border: 0;
+    padding: 4px 27px 7px 27px;
+    font-size: 20px;
+}
+#contact-form{
+    width: 50%;
+}
+#mobile-icon{
+    font-size: 50px;
+    color: #44B564;
+}
+@media only screen and (max-width:540px) {
+    #send-button{
+        padding: 4px 25px 6px 25px;
+        font-size: 17px;
+    }
+    #contact-form{
+        width: 60%;
+    }
+    #footer-content-1{
+        flex-direction: column;
+        text-align: center;
+    }
+    #footer-content-2{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+}

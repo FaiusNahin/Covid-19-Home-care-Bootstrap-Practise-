@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Home care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS-JS/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ca40b1d4c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav">
+            <div class="container ">
+                <a class="navbar-brand" href="#"><img src="https://covid-home-care.netlify.app/img/logo.svg" alt=""
+                        class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown mx-2 fs-5 navbar-hover">
+                            <a class="nav-link dropdown-toggle active" id="nav-element" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Home</a></li>
+                                <li><a class="dropdown-item" href="#servises">Servises</a></li>
+                                <li><a class="dropdown-item" href="#contact-us">Contact us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-2 fs-5 navbar-hover">
+                            <a class="nav-link active" id="nav-element" aria-current="page" href="#servises">What we
+                                do?</a>
+                        </li>
+                        <li class="nav-item mx-2 fs-5 navbar-hover">
+                            <a class="nav-link active" id="nav-element" aria-current="page"
+                                href="#prevention">Prevention</a>
+                        </li>
+                        <li class="nav-item mx-2 fs-5 navbar-hover">
+                            <a class="nav-link active" id="nav-element" aria-current="page"
+                                href="#symptoms">Symptoms</a>
+                        </li>
+                        </li>
+                        <li class="nav-item mx-2 fs-5 navbar-hover">
+                            <a class="nav-link active" id="nav-element" aria-current="page" href="#contact-us">Contract
+                                us</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center navbar-hover">
+                            <button class="btn" id="nav-element" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i
+                                    class="fas fa-search"></i></button>
+                            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                                aria-labelledby="offcanvasTopLabel" style="height:17vh;">
+                                <div class="offcanvas-header container col-md-12 col-12">
+                                    <form class="d-flex container-fluid w-75 mx-0 my-3 col-w-100">
+                                        <input class="form-control rounded-3 me-2" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                        <button class="btn btn-border-primary rounded-3" type="submit"><i
+                                                class="fas fa-search"></i></button>
+                                    </form>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner-->
+        <section class="banner-section pt-5">
+            <div class="container d-flex col-12 col-md-12 col-lg-12 pt-5">
+                <div class="row pt-3">
+                    <div class="left-banner d-flex flex-column justify-content-center col-12 col-md-6 col-lg-6 ">
+                        <p class="text-danger fs-5"><i class="fas fa-exclamation-triangle"></i> COVID-19 ALERT</p>
+                        <h1 class="mb-3 banner-heading">Together we fight COVID-19</h1>
+                        <h4 class="fw-normal text-secondary"> Seque empowers you to get more done with intense focus and
+                            zero
+                            interruptions.Seque empowers you
+                            to get more done with intense focus and zero interruptions.</h4>
+                        <button class="text-white px-5 py-1 fs-4 my-5
+                         me-auto" id="banner-button" href="">Let us help</button>
+                    </div>
+                    <div class="right-banner d-flex justify-content-center col-12 col-md-6 col-lg-6 ">
+                        <img class="img-fluid" src="https://covid-home-care.netlify.app/img/first.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Latest Update -->
+        <section class="my-5">
+            <div class="update-container container pb-4 pt-4 shadow">
+                <div class="row py-2">
+                    <div class="update-details d-flex flex-column align-items-center col-12 col-md-6 col-lg-3">
+                        <p class="fs-6 my-2 text-body">Total Cases</p>
+                        <h1 class="mb-2" id="update-heading">492,667+</h1>
+                        <p class="fs-6 text-body">+2,584</p>
+                    </div>
+                    <div class="update-details d-flex flex-column align-items-center col-12 col-md-6 col-lg-3">
+                        <p class="fs-6 my-2 text-body">Active Cases</p>
+                        <h1 class="mb-2" id="update-heading">492,667+</h1>
+                        <p class="fs-6 text-body">18% from total cases</p>
+                    </div>
+                    <div class="update-details d-flex flex-column align-items-center col-12 col-md-6 col-lg-3">
+                        <p class="fs-6 my-2 text-body">Recovered</p>
+                        <h1 class="mb-2 update-color" id="update-heading">492,667+</h1>
+                        <p class="fs-6 text-body">55% from total cases</p>
+                    </div>
+                    <div class="update-details d-flex flex-column align-items-center col-12 col-md-6 col-lg-3">
+                        <p class="fs-6 my-2 text-body">Deaths</p>
+                        <h1 class="mb-2 text-danger" id="update-heading">492,667+</h1>
+                        <p class="fs-6 text-body">20% from total Cases</p>
+                    </div>
+                    <div class="update-details d-flex flex-column align-items-center col-12 col- col-md-12 col-lg-12">
+                        <div class="update-details d-flex flex-column align-items-center col-12  col-md-12 col-lg-12">
+                            <p class="fs-5 text-body my-4"><span class="update-color">BANGLADESH</span>
+                                | Last
+                                update: April
+                                04,
+                                2020</p>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+
+    </header>
+    <main>
+        <!-- Services Section -->
+        <section class="services-section py-5 my-5" id="servises">
+            <div class="container d-flex col-12 col-md-12 col-lg-12 mt-5 pt-5">
+                <div class="row ">
+                    <div class="left-banner d-flex flex-column justify-content-center order-2 col-12 col-md-6 col-lg-6">
+                        <h1 class=" banner-heading"><span style="color: #44B564;">What</span> we do?</h1>
+                        <hr>
+                        <h4 class="fw-normal text-secondary pb-5"> Covid 19 positive or Pneumonitis patient will be
+                            treated
+                            at home as per doctor order by GNC certified nursing staff.</h4>
+                        <ul class="">
+                            <li class="mb-0" id="line-height">
+                                <p>Facilities of blood sugar</p>
+                            </li>
+                            <li class="mb-0" id="line-height">
+                                <p>B.P. Measurement</p>
+                            </li>
+                            <li class="mb-0" id="line-height">
+                                <p>Spo2 Measurement</p>
+                            </li>
+                            <li class="mb-0" id="line-height">
+                                <p>Ryle's tube insertion</p>
+                            </li>
+                            <li class="mb-0" id="line-height">
+                                <p>Catheterisation</p>
+                            </li>
+                            <li class="mb-0" id="line-height">
+                                <p>Dressing facilities are available 24*7</p>
+                            </li>
+                        </ul>
+                        <button class=" text-white px-4 py-1 fs-4 my-4
+                         me-auto" id="banner-button" href="">Contact us <i
+                                class="fas fa-long-arrow-alt-right align-middle ms-2 fs-4"></i></button>
+                    </div>
+                    <div class="right-banner d-flex order-1 col-12 col-md-6 col-lg-6 p-0">
+                        <img class="img-fluid" src="https://covid-home-care.netlify.app/img/amico-win.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Prevention -->
+        <section class="py-5" id="prevention">
+            <div class="container my-5 py-5">
+                <div class="row row-lg-12">
+                    <div
+                        class="top-prevention d-flex flex-column justify-content-center align-items-center col-12 col-md-12 col-lg-12">
+                        <h1>Prevention</h1>
+                        <hr class="" id="horizontal-row">
+                        <p class="fs-5 text-center text-secondary py-4">Protect yourself and others around you by
+                            knowing
+                            the
+                            facts
+                            and
+                            taking
+                            appropriate precautions.
+                            <br>
+                            Floow advice provided by your local health authority.
+                        </p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+                    <div class="col">
+                        <div class="d-flex justify-content-between card h-100 shadow border-0" id="card-rounded">
+                            <div class="pt-5 px-4 pb-4">
+                                <img src="https://covid-home-care.netlify.app/img/using-mask.svg" class="card-img-top"
+                                    alt="...">
+                            </div>
+                            <div class="card-footer pt-0 border-top-0" id="card-footer-border">
+                                <h5 class="card-title" id="card-heading">Wear a mask</h5>
+                                <p class="card-text py-3 text-secondary" id="card-info">Masks can help prevent the
+                                    spread of the
+                                    virus from the
+                                    person
+                                    wearing the mask to others.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex justify-content-between h-100 card shadow border-0" id="card-rounded">
+                            <div class="pt-5 px-4 pb-4">
+                                <img src="https://covid-home-care.netlify.app/img/hand-wash.svg" class="card-img-top"
+                                    alt="...">
+                            </div>
+                            <div class="card-footer pt-0 border-top-0" id="card-footer-border">
+                                <h5 class="card-title" id="card-heading">Wash your hands often</h5>
+                                <p class="card-text py-3 text-secondary" id="card-info">Clean your hands with soop and
+                                    water, or alcohol-based hand sanitizer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex justify-content-between card h-100 shadow border-0" id="card-rounded">
+                            <div class="pt-5 px-4 pb-4">
+                                <img src="https://covid-home-care.netlify.app/img/social-distance.svg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-footer pt-0 border-top-0" id="card-footer-border">
+                                <h5 class="card-title" id="card-heading">Physical distancing</h5>
+                                <p class="card-text py-3 text-secondary" id="card-info">Maintain a safe distance
+                                    especially from anyone who is coughinf or sneezing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- Symptoms -->
+        <section class="pb-5 symptoms-section" id="symptoms">
+            <div class="container py-5 ">
+                <div class="row row-col-1 row-col-md-1  row-col-lg-1 pt-5 mt-5">
+                    <div
+                        class="top-prevention d-flex flex-column justify-content-center align-items-center col-12 col-md-12 col-lg-12">
+                        <h1>Symptoms</h1>
+                        <hr class="" id="horizontal-row">
+                        <p class="fs-5 text-center text-secondary py-4">COVID-19 affects different people in different
+                            ways. Most infected people will
+                            <br>
+                            develop mild to moderate illness and recover without hospitalization.
+                        </p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center col-12 col-md-12 col-lg-12 py-5">
+                        <img class="img-fluid" src="https://covid-home-care.netlify.app/img/Symptoms-main.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Us -->
+        <section class="pb-4" id="contact-us">
+            <div class="container pb-4 shadow" id="contact-container">
+                <!-- Top Part -->
+                <div class="row row-col-1 row-col-md-1 row-col-lg-1 pt-5 mt-5">
+                    <div
+                        class="top-prevention d-flex flex-column justify-content-center align-items-center col-12 col-md-12 col-lg-12">
+                        <h1>Need Help!</h1>
+                        <hr class="" id="horizontal-row">
+                        <p class="fs-5 text-center text-secondary py-4">Protect yourself and others around you by
+                            knowing the facts and taking appropriate
+                            <br>
+                            precautions. Floow advice provided by your local health authority.
+                        </p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center col-12 col-md-12 col-lg-12 py-5">
+                        <img class="img-fluid" src="https://covid-home-care.netlify.app/img/pana.svg" alt="">
+                    </div>
+                </div>
+                <!-- Bottom Prt -->
+                <div class="row row-col-1 row-col-md-1 row-col-lg-2 py-4">
+                    <div class="d-flex flex-column align-items-center col-12 col-md-12 col-lg-6">
+                        <div class="row row-col-1 row-col-md-1 row-col-lg-1 ">
+                            <div class="col-3 col-md-3 col-lg-3">
+                                <i class="fas fa-mobile-alt" id="mobile-icon"></i>
+                            </div>
+                            <div class="col-9 col-md-9 col-lg-9 ps-1">
+                                <p class="mb-5" id="contact-number">DANISH GOHEL
+                                    <br>
+                                    (+91) 9157999875
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row row-col-1 row-col-md-1 row-col-lg-1 ">
+                            <div class="col-3 col-md-3 col-lg-3">
+                                <i class="fas fa-mobile-alt" id="mobile-icon"></i>
+                            </div>
+                            <div class="col-9 col-md-9 col-lg-9 ps-1">
+                                <p class="mb-5" id="contact-number">
+                                    NILESH GOHEL
+                                    <br>
+                                    (+91) 9157999875
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center col-12 col-md-12 col-lg-6">
+                        <div class="mb-4" id="contact-form">
+                            <input type="email" class="form-control text-black-50" id="exampleFormControlInput1"
+                                placeholder="Name">
+                        </div>
+                        <div class="mb-4" id="contact-form">
+                            <input type="email" class="form-control text-black-50" id="exampleFormControlInput1"
+                                placeholder="Number">
+                        </div>
+                        <div class="mb-4" id="contact-form">
+                            <input type="email" class="form-control text-black-50" id="exampleFormControlInput1"
+                                placeholder="Subject">
+                        </div>
+                        <div class="" id="contact-form">
+                            <textarea class="form-control text-black-50 pb-5" id="exampleFormControlTextarea1"
+                                placeholder="How can i help you?" rows="3"></textarea>
+                        </div>
+                        <div class="" id="contact-form">
+                            <button class="text-white my-4
+                         me-auto" id="send-button" href="">Click to send <i
+                                    class="fas fa-long-arrow-alt-right align-middle ms-2 fs-4"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="container mt-5 pt-5 pb-1">
+                <div class="row row-col-lg-1 row-col-md-1 row-col-2 pt-5 mt-4">
+                    <div class="d-flex justify-content-start col-12 col-md-6 col-lg-6" id="footer-content-1">
+                        <p class="text-white fs-5">© 2021, Design by Atik Gohel Develop by Faius Mojumder Nahin</p>
+                    </div>
+                    <div class="d-flex justify-content-end col-12 col-md-6 col-lg-6" id="footer-content-2">
+                        <a class="text-decoration-none text-white fs-5" href="#nav"><i class="fas fa-arrow-up"></i> Back
+                            to
+                            top</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+    <script src="CSS-JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
