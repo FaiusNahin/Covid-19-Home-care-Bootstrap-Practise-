@@ -1,6 +1,6 @@
 nav{
     border-bottom: 1px solid rgba(148, 147, 147, 0.178);
-    background-color: rgba(255, 255, 255, 0.74);
+    background-color: rgba(255, 255, 255, 0.678);
 }
 .navbar-hover:hover #nav-element{
     color: #44B564;
